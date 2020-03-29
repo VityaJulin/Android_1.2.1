@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android_1.2.1</string>
+    <string name="subscribe">Subscribe here</string>
+    <string name="user_name">Enter your name</string>
+    <string name="user_email">Enter your e-mail</string>
+    <string name="ok">OK</string>
+    <string name="erase">Erase</string>
+    <string name="toast_output_name">Subscription for user</string>
+    <string name="toast_output_email">is issued to address</string>
+</resources>

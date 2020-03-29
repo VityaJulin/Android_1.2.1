@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Андроид_1.2.1</string>
+    <string name="subscribe">Оформить подписку</string>
+    <string name="user_name">Ваше имя</string>
+    <string name="user_email">Ваш e-mail</string>
+    <string name="ok">Готово</string>
+    <string name="erase">Очистить</string>
+    <string name="toast_output_name">Подписка оформлена для пользователя</string>
+    <string name="toast_output_email">на адрес электронной почты</string>
+</resources>
