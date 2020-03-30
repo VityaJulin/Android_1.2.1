@@ -22,51 +22,36 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/user_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/user_name"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header" />
-
     <EditText
         android:id="@+id/enter_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:hint="@string/user_name"
         android:inputType="textMultiLine"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/user_name" />
+        app:layout_constraintTop_toBottomOf="@id/header" />
 
-    <TextView
-        android:id="@+id/user_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/user_name"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/enter_name" />
 
     <EditText
         android:id="@+id/enter_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:inputType="textMultiLine"
+        android:hint="@string/user_email"
+        android:inputType="textEmailAddress"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/user_email" />
+        app:layout_constraintTop_toBottomOf="@id/enter_name" />
 
     <Button
         android:id="@+id/ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="@string/ok"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/enter_email">"</Button>
+        app:layout_constraintTop_toBottomOf="@id/enter_email" />
 
 
     <Button
@@ -74,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/erase"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/enter_email" />

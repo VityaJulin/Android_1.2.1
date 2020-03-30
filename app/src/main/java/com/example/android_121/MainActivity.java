@@ -18,15 +18,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        init();
+
+        userName = findViewById(R.id.enter_name);
+        userEmail = findViewById(R.id.enter_email);
+        okBtn = findViewById(R.id.ok);
+        eraseBtn = findViewById(R.id.erase);
 
         okBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String name = userName.getText().toString();
                 String email = userEmail.getText().toString();
-                Toast.makeText(MainActivity.this, getResources().getString(R.string.toast_output_name)
-                        + " " + name + " " + getResources().getString(R.string.toast_output_email) + " " + email, Toast.LENGTH_LONG).show();
+
+                if (name.equals("") && email.equals("")) {
+                    Toast.makeText(MainActivity.this, R.string.input_error, Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(MainActivity.this, getResources().getString(R.string.toast_output_name)
+                            + " " + name + " " + getResources().getString(R.string.toast_output_email) + " " + email, Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -37,12 +47,5 @@ public class MainActivity extends AppCompatActivity {
                 userEmail.getText().clear();
             }
         });
-    }
-
-    public void init() {
-        userName = findViewById(R.id.enter_name);
-        userEmail = findViewById(R.id.enter_email);
-        okBtn = findViewById(R.id.ok);
-        eraseBtn = findViewById(R.id.erase);
     }
 }

@@ -8,4 +8,5 @@
     <string name="erase">Очистить</string>
     <string name="toast_output_name">Подписка оформлена для пользователя</string>
     <string name="toast_output_email">на адрес электронной почты</string>
+    <string name="input_error">Введите имя и адрес электронной почты</string>
 </resources>

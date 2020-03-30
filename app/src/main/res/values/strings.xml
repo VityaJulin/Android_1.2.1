@@ -7,4 +7,5 @@
     <string name="erase">Erase</string>
     <string name="toast_output_name">Subscription for user</string>
     <string name="toast_output_email">is issued to address</string>
+    <string name="input_error">Enter a name and e-mail</string>
 </resources>
