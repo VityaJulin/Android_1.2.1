@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 String name = userName.getText().toString();
                 String email = userEmail.getText().toString();
 
-                if (name.equals("") && email.equals("")) {
+                if (name.equals("") || email.equals("")) {
                     Toast.makeText(MainActivity.this, R.string.input_error, Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(MainActivity.this, getResources().getString(R.string.toast_output_name)
